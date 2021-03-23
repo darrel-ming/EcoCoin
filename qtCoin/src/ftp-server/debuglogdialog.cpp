@@ -103,7 +103,7 @@ void DebugLogDialog::appendText(const QString &text)
     ui->plainTextEdit->appendPlainText(text);
 }
 
-void DebugLogDialog::on_pushButton_clicked()
+void DebugLogDialog::on_btn_Close_clicked()
 {
     close();
 }

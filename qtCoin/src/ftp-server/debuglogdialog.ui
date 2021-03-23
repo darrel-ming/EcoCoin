@@ -18,7 +18,7 @@
     <widget class="QPlainTextEdit" name="plainTextEdit"/>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btn_Close">
      <property name="text">
       <string>Close</string>
      </property>

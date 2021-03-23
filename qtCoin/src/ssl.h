@@ -1,7 +1,6 @@
 //#ifndef SSL_H
 //#define SSL_H
 
-
 //https://forum.qt.io/topic/70616/ssl-client-server-handshake
 //#include "ServerExample.h"
 
@@ -15,7 +14,6 @@
 //ServerExample::ServerExample(QObject *parent) : QObject(parent)
 //{
 //}
-
 
 //void ServerExample::run()
 //{
@@ -75,7 +73,6 @@
 //ClientExample::ClientExample(QObject *parent) : QObject(parent)
 //{
 //}
-
 
 //void ClientExample::run()
 //{
@@ -187,6 +184,5 @@
 //    BIO_free_all(bp_public);
 //    BIO_free_all(bp_private);
 //}
-
 
 //#endif // SSL_H

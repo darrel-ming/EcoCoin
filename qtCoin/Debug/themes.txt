@@ -1,0 +1,26 @@
+theme:./Resource/themes/test.qss
+theme:./Resource/themes/breezedarkgreen.qss
+theme:./Resource/themes/BreezeStyleSheets/dark.qss
+theme:./Resource/themes/BreezeStyleSheets/light.qss
+theme:./Resource/themes/Kuroi/Kuroi (Dark) by Ani.qss
+theme:./Resource/themes/orange.qss
+theme:./Resource/themes/qdarkstyle/pinkdark.qss
+theme:./Resource/themes/qdarkstyle/pinklight.qss
+theme:./Resource/themes/qdarkstyle/qdarkstyle.qss
+theme:./Resource/themes/qdarkstyle/style.qss
+theme:./Resource/themes/QSS/AMOLED.qss
+theme:./Resource/themes/QSS/Aqua.qss
+theme:./Resource/themes/QSS/ConsoleStyle.qss
+theme:./Resource/themes/QSS/ElegantDark.qss
+theme:./Resource/themes/QSS/ManjaroMix.qss
+theme:./Resource/themes/QSS/MaterialDark.qss
+theme:./Resource/themes/QSS/Ubuntu.qss
+theme:./Resource/themes/qss-dracula/dracula.qss
+theme:./Resource/themes/style.qss
+theme:./Resource/themes/style2.qss
+theme:./Resource/themes/style3.qss
+theme:./Resource/themes/style4.qss
+theme:./Resource/themes/test.qss
+/test.qss
+t.qss
+

@@ -9,9 +9,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1018</width>
-    <height>570</height>
+    <width>1006</width>
+    <height>590</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>32</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>qtCoin</string>
@@ -46,60 +52,78 @@
               <property name="title">
                <string>Coin Status and Transactions</string>
               </property>
-              <layout class="QGridLayout" name="gridLayout_6">
-               <item row="1" column="5">
-                <widget class="QProgressBar" name="progress_2">
-                 <property name="value">
-                  <number>24</number>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="4">
-                <widget class="QLabel" name="label_13">
-                 <property name="text">
-                  <string>Avalability</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
                 <widget class="QLabel" name="status_11">
                  <property name="text">
                   <string>Status</string>
                  </property>
                 </widget>
                </item>
-               <item row="1" column="3">
-                <widget class="QProgressBar" name="progress">
-                 <property name="value">
-                  <number>24</number>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="2">
-                <widget class="QLabel" name="label_12">
-                 <property name="text">
-                  <string>Maturing Progress</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
+               <item>
                 <widget class="QLineEdit" name="lineEdit_7">
                  <property name="text">
                   <string>Online / Offline Storage</string>
                  </property>
                 </widget>
                </item>
-               <item row="1" column="6">
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>Maturing Progress</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QProgressBar" name="pg_Mature">
+                 <property name="value">
+                  <number>24</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_13">
+                 <property name="text">
+                  <string>Avalability</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QProgressBar" name="pg_MatureAvalability">
+                 <property name="value">
+                  <number>24</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
                 <widget class="QPushButton" name="CheckAvailability">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Check</string>
                  </property>
                 </widget>
                </item>
-               <item row="1" column="7">
+               <item>
                 <widget class="QPushButton" name="updateVerify">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="text">
-                  <string>UpdateVerify</string>
+                  <string>Update Verify</string>
                  </property>
                 </widget>
                </item>
@@ -174,6 +198,12 @@
                </item>
                <item row="8" column="1">
                 <widget class="QPushButton" name="SendCoins">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>GiveCoins</string>
                  </property>
@@ -201,6 +231,12 @@
                </item>
                <item row="7" column="1">
                 <widget class="QPushButton" name="generatetx">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Generate TX file</string>
                  </property>
@@ -227,6 +263,12 @@
                </item>
                <item row="1" column="0">
                 <widget class="QPushButton" name="sendSaveqr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Save</string>
                  </property>
@@ -272,6 +314,12 @@
                </item>
                <item row="1" column="0">
                 <widget class="QPushButton" name="receivesaveqr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Save</string>
                  </property>
@@ -314,14 +362,26 @@
                 </widget>
                </item>
                <item row="6" column="1">
-                <widget class="QPushButton" name="placeCoinsopenfile">
+                <widget class="QPushButton" name="btn_placeCoinsOpenFile">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
-                  <string>OpenFile/Image</string>
+                  <string>Open File/Image</string>
                  </property>
                 </widget>
                </item>
                <item row="7" column="1">
                 <widget class="QPushButton" name="placeCoins">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>ReceiveCoins/Payout</string>
                  </property>
@@ -419,6 +479,12 @@
                </item>
                <item row="5" column="1">
                 <widget class="QPushButton" name="GenerateRequest">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>GenerateRequest</string>
                  </property>
@@ -487,21 +553,21 @@
               </property>
               <layout class="QGridLayout" name="gridLayout_30">
                <item row="0" column="0">
-                <widget class="QPushButton" name="walletCreateAddress">
+                <widget class="QPushButton" name="btn_WalletCreateAddress">
                  <property name="text">
                   <string>add</string>
                  </property>
                 </widget>
                </item>
                <item row="0" column="1">
-                <widget class="QPushButton" name="pushButton_15">
+                <widget class="QPushButton" name="btn_AddressRemove">
                  <property name="text">
                   <string>remove</string>
                  </property>
                 </widget>
                </item>
                <item row="1" column="0">
-                <widget class="QPushButton" name="addresssearch">
+                <widget class="QPushButton" name="btn_AddressSearch">
                  <property name="text">
                   <string>search</string>
                  </property>
@@ -559,14 +625,14 @@
               </property>
               <layout class="QGridLayout" name="gridLayout_29">
                <item row="1" column="0">
-                <widget class="QPushButton" name="pushButton_5">
+                <widget class="QPushButton" name="btn_ContactAdd">
                  <property name="text">
                   <string>add</string>
                  </property>
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QPushButton" name="pushButton_7">
+                <widget class="QPushButton" name="btn_ContactRemove">
                  <property name="text">
                   <string>remove</string>
                  </property>
@@ -576,7 +642,7 @@
                 <widget class="QLineEdit" name="lineEdit_2"/>
                </item>
                <item row="0" column="1">
-                <widget class="QPushButton" name="pushButton_8">
+                <widget class="QPushButton" name="btn_ContactSearch">
                  <property name="text">
                   <string>search</string>
                  </property>
@@ -778,14 +844,26 @@
              </widget>
             </item>
             <item row="1" column="0">
-             <widget class="QPushButton" name="CreateWallet">
+             <widget class="QPushButton" name="btn_CreateWallet">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
                <string>CreateWallet Open wallet</string>
               </property>
              </widget>
             </item>
             <item row="2" column="0">
-             <widget class="QPushButton" name="adminmode">
+             <widget class="QPushButton" name="btn_AdminMode">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
                <string>GenerateCoinMode ( not for clients )</string>
               </property>
@@ -799,13 +877,13 @@
       </widget>
       <widget class="QWidget" name="admintab">
        <attribute name="title">
-        <string>Admin</string>
+        <string>Mature  Investment</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_13">
         <item row="0" column="1">
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>3</number>
+           <number>4</number>
           </property>
           <widget class="QWidget" name="tab_8">
            <attribute name="title">
@@ -813,9 +891,15 @@
            </attribute>
            <layout class="QGridLayout" name="gridLayout_14">
             <item row="0" column="2">
-             <widget class="QPushButton" name="randomSearch">
+             <widget class="QPushButton" name="btn_SelectAll">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
-               <string>Random Search</string>
+               <string>Select All</string>
               </property>
              </widget>
             </item>
@@ -827,7 +911,14 @@
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLineEdit" name="userid"/>
+             <widget class="QLineEdit" name="userid">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
             </item>
             <item row="1" column="0">
              <widget class="QLabel" name="label_15">
@@ -869,10 +960,23 @@
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLineEdit" name="coinid"/>
+             <widget class="QLineEdit" name="coinid">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
             </item>
             <item row="1" column="2">
-             <widget class="QPushButton" name="userssearch">
+             <widget class="QPushButton" name="btn_Search">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
                <string>Search</string>
               </property>
@@ -892,7 +996,13 @@
               </property>
               <layout class="QGridLayout" name="gridLayout_33">
                <item row="9" column="1">
-                <widget class="QPushButton" name="saveuserinfo">
+                <widget class="QPushButton" name="btn_SaveUserInfo">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Save info to text for user</string>
                  </property>
@@ -1006,7 +1116,13 @@
                 </widget>
                </item>
                <item row="8" column="1">
-                <widget class="QPushButton" name="pushButtonInsertUser">
+                <widget class="QPushButton" name="btn_InsertUser">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Insert User then email</string>
                  </property>
@@ -1059,6 +1175,12 @@
                </item>
                <item row="9" column="3">
                 <widget class="QPushButton" name="addUserQR">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>SaveQRcode</string>
                  </property>
@@ -1072,7 +1194,13 @@
                 </widget>
                </item>
                <item row="8" column="3">
-                <widget class="QPushButton" name="usergenerateQr">
+                <widget class="QPushButton" name="btn_UserGenerateQr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>usergenerateQr</string>
                  </property>
@@ -1368,7 +1496,7 @@
               </widget>
               <widget class="QWidget" name="tab_7">
                <attribute name="title">
-                <string>Mature Investment</string>
+                <string>Mature  Investment</string>
                </attribute>
                <layout class="QGridLayout" name="gridLayout_16">
                 <item row="0" column="0">
@@ -1376,190 +1504,210 @@
                   <property name="title">
                    <string>Matures</string>
                   </property>
-                  <widget class="QPlainTextEdit" name="maturedescription">
-                   <property name="geometry">
-                    <rect>
-                     <x>140</x>
-                     <y>70</y>
-                     <width>771</width>
-                     <height>141</height>
-                    </rect>
-                   </property>
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="plainText">
-                    <string>What the investment will be based on</string>
-                   </property>
-                  </widget>
-                  <widget class="QLabel" name="label_18">
-                   <property name="geometry">
-                    <rect>
-                     <x>10</x>
-                     <y>70</y>
-                     <width>70</width>
-                     <height>18</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string>Description</string>
-                   </property>
-                  </widget>
-                  <widget class="QWidget" name="layoutWidget">
-                   <property name="geometry">
-                    <rect>
-                     <x>10</x>
-                     <y>30</y>
-                     <width>473</width>
-                     <height>32</height>
-                    </rect>
-                   </property>
-                   <layout class="QHBoxLayout" name="horizontalLayout">
-                    <item>
-                     <layout class="QHBoxLayout" name="horizontalLayout_2">
-                      <item>
-                       <widget class="QRadioButton" name="matureradio_yes">
+                  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,10">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <item>
+                      <widget class="QRadioButton" name="matureradio_yes">
+                       <property name="maximumSize">
+                        <size>
+                         <width>50</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>Yes</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QRadioButton" name="matureradio_no">
+                       <property name="maximumSize">
+                        <size>
+                         <width>50</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>No</string>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Minimum</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_9">
+                       <property name="text">
+                        <string>CoinPayout </string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QDoubleSpinBox" name="coinpayout">
+                       <property name="value">
+                        <double>1.000000000000000</double>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_20">
+                       <property name="text">
+                        <string>Investment Multiplier: 2 is double</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_2">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_10">
+                       <property name="text">
+                        <string>MaturingDate</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="matureday">
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="maturemonth">
+                       <item>
                         <property name="text">
-                         <string>Yes</string>
+                         <string>Jan</string>
                         </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QRadioButton" name="matureradio_no">
+                       </item>
+                       <item>
                         <property name="text">
-                         <string>No</string>
+                         <string>Feb</string>
                         </property>
-                        <property name="checked">
-                         <bool>true</bool>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Mar</string>
                         </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_9">
-                      <property name="text">
-                       <string>CoinPayout </string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QDoubleSpinBox" name="coinpayout">
-                      <property name="value">
-                       <double>1.000000000000000</double>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_20">
-                      <property name="text">
-                       <string>Investment Multiplier: 2 is double</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                  <widget class="QWidget" name="layoutWidget">
-                   <property name="geometry">
-                    <rect>
-                     <x>490</x>
-                     <y>30</y>
-                     <width>416</width>
-                     <height>38</height>
-                    </rect>
-                   </property>
-                   <layout class="QHBoxLayout" name="horizontalLayout_3">
-                    <item>
-                     <widget class="QLabel" name="label_10">
-                      <property name="text">
-                       <string>MaturingDate</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QSpinBox" name="matureday">
-                      <property name="minimum">
-                       <number>1</number>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QComboBox" name="maturemonth">
-                      <item>
-                       <property name="text">
-                        <string>Jan</string>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>April</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>May</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>June</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>July</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Aug</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>September</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>October</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>November</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSpinBox" name="matureyear">
+                       <property name="maximum">
+                        <number>15000</number>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>Feb</string>
+                       <property name="value">
+                        <number>2020</number>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>Mar</string>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTimeEdit" name="maturetime"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,10">
+                     <item>
+                      <widget class="QLabel" name="label_18">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
                        </property>
-                      </item>
-                      <item>
                        <property name="text">
-                        <string>April</string>
+                        <string>Description</string>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>May</string>
+                       <property name="alignment">
+                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>June</string>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPlainTextEdit" name="maturedescription">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>July</string>
+                       <property name="plainText">
+                        <string>What the investment will be based on</string>
                        </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>Aug</string>
-                       </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>September</string>
-                       </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>October</string>
-                       </property>
-                      </item>
-                      <item>
-                       <property name="text">
-                        <string>November</string>
-                       </property>
-                      </item>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QSpinBox" name="matureyear">
-                      <property name="maximum">
-                       <number>15000</number>
-                      </property>
-                      <property name="value">
-                       <number>2020</number>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QTimeEdit" name="maturetime"/>
-                    </item>
-                   </layout>
-                  </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
                  </widget>
                 </item>
                </layout>
@@ -1567,14 +1715,26 @@
              </widget>
             </item>
             <item row="3" column="1">
-             <widget class="QPushButton" name="gencoininfo_btn">
+             <widget class="QPushButton" name="btn_GenCoinInfo">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
                <string>SaveInfo - (developer use only)</string>
               </property>
              </widget>
             </item>
             <item row="3" column="0">
-             <widget class="QPushButton" name="pushButton">
+             <widget class="QPushButton" name="btn_GenerateCoin">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>32</height>
+               </size>
+              </property>
               <property name="text">
                <string>GenerateCoin</string>
               </property>
@@ -1600,7 +1760,7 @@
            <attribute name="title">
             <string>FTP Server</string>
            </attribute>
-           <widget class="QPushButton" name="ftpserver">
+           <widget class="QPushButton" name="btn_FtpServer">
             <property name="geometry">
              <rect>
               <x>300</x>
@@ -1613,7 +1773,7 @@
              <string>ftpserver</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="test">
+           <widget class="QPushButton" name="btn_FTPTest">
             <property name="geometry">
              <rect>
               <x>300</x>
@@ -1658,7 +1818,7 @@
                <property name="geometry">
                 <rect>
                  <x>520</x>
-                 <y>0</y>
+                 <y>10</y>
                  <width>351</width>
                  <height>242</height>
                 </rect>
@@ -1752,7 +1912,7 @@
                 </item>
                </layout>
               </widget>
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="btnClear">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -1794,8 +1954,14 @@
                  <x>360</x>
                  <y>30</y>
                  <width>121</width>
-                 <height>28</height>
+                 <height>36</height>
                 </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>36</height>
+                </size>
                </property>
                <property name="text">
                 <string>scan</string>
@@ -1883,8 +2049,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1018</width>
-     <height>24</height>
+     <width>1006</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

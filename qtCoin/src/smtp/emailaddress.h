@@ -10,29 +10,25 @@ class SMTP_EXPORT EmailAddress : public QObject
 {
     Q_OBJECT
 public:
-
     /* [1] Constructors and Destructors */
 
     EmailAddress();
-    EmailAddress(const QString & address, const QString & name="");
+    EmailAddress(const QString &address, const QString &name = "");
 
     ~EmailAddress();
 
     /* [1] --- */
 
-
     /* [2] Getters and Setters */
-    void setName(const QString & name);
-    void setAddress(const QString & address);
+    void setName(const QString &name);
+    void setAddress(const QString &address);
 
-    const QString & getName() const;
-    const QString & getAddress() const;
+    const QString &getName() const;
+    const QString &getAddress() const;
 
     /* [2] --- */
 
-
 private:
-
     /* [3] Private members */
 
     QString name;

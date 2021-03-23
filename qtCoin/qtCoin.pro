@@ -5,28 +5,34 @@
 #-------------------------------------------------
 
 QT += core gui sql printsupport
-LIBS += -lglut -lGL -lGLU
+#LIBS += -lglut -lGL -lGLU
+# LIBS += F:/Woks/Cray_Canada/EcoCoin/qtCoin/glut32.lib
+
+# LIBS += -LF:/Woks/Cray_Canada/EcoCoin/qtCoin/libs
+# LIBS += -F:/Woks/Cray_Canada/EcoCoin/qtCoin/libs/glut32.lib
 
 #emscripten
 linux {
-DEFINES += zlib QUAZIP DOWNLOAD SMTP SOUND DBUS STORAGE FTP OPENGL
-#DEFINES += DOWNLOAD SMTP SOUND STORAGE FTP
-QT += multimedia svg dbus network opengl
-CONFIG += barcodescan
-#unix:!macx:CONFIG += barcodescan
-barcodescan{
-LIBS+= -lpng -ljpeg
-DEFINES += BARCODE
-}
-//INCLUDEPATH
-
+    DEFINES += zlib QUAZIP DOWNLOAD SMTP SOUND DBUS STORAGE FTP OPENGL
+    #DEFINES += DOWNLOAD SMTP SOUND STORAGE FTP
+    QT += multimedia svg dbus network opengl
+    CONFIG += barcodescan
+    #unix:!macx:CONFIG += barcodescan
+    barcodescan{
+        LIBS+= -lpng -ljpeg
+        DEFINES += BARCODE
+    }
+    //INCLUDEPATH
+    message("linux")
 }
 
 win32 {
-DEFINES += SOUND DBUS DOWNLOAD SMTP STORAGE FTP
-QT += multimedia svg dbus network
-CONFIG += barcodescan
+    message("32-bit windows")
+    DEFINES += SOUND DBUS DOWNLOAD SMTP STORAGE FTP SMTP
+    QT += multimedia svg dbus network
+    CONFIG += barcodescan
 }
+
 
 wasm-emscripten {
 LIBS += -lidbfs.js -lnodefs.js -lworkerfs.js

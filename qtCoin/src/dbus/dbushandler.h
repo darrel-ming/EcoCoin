@@ -54,12 +54,14 @@ public:
 
   void          stop(void)
   {
-    QDBusConnection connection = QDBusConnection::sessionBus();
-
-    connection.unregisterObject(DBUS_PATH);
-    connection.unregisterService(QString());
-    connection.disconnectFromBus(connection.name());
-    QThread::quit();
+      QDBusConnection connection = QDBusConnection::sessionBus();
+    if(connection.isConnected())
+    {
+        connection.unregisterObject(DBUS_PATH);
+        connection.unregisterService(QString());
+        connection.disconnectFromBus(connection.name());
+QThread::quit();
+    }
   }
 
 public slots:

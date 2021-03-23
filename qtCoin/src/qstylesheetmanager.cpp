@@ -10,16 +10,16 @@ QStyleSheetManager::~QStyleSheetManager(void)
 {
 }
 
-void QStyleSheetManager::loadStyleSheet(const QString& sheet_name)
+void QStyleSheetManager::loadStyleSheet(const QString &sheet_name)
 {
-    QFile file(sheet_name);    // Modified by RCU 2016.07.17
+    QFile file(sheet_name); // Modified by RCU 2016.07.17
     file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String( file.readAll() );
+    QString styleSheet = QLatin1String(file.readAll());
 
     qApp->setStyleSheet(styleSheet);
 }
 
-void QStyleSheetManager::loadStyleSheet(const QString& sheet_name, QWidget* widget)
+void QStyleSheetManager::loadStyleSheet(const QString &sheet_name, QWidget *widget)
 {
     QFile file("/" + sheet_name + ".qss");
     file.open(QFile::ReadOnly);
